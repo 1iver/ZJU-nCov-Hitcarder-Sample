@@ -17,6 +17,7 @@ jobs:
             dingtalk_token: DINGTALK_TOKEN
             pushplus_token: PUSHPLUS_TOKEN
             serverchan_key: SERVERCHAN_KEY
+            captcha_key: CAPTCHA_KEY
     steps:
       - name: Working
         uses: 1iver/zju-ncov-hitcarder@master
@@ -26,3 +27,4 @@ jobs:
           dingtalk_token: ${{ secrets[matrix.dingtalk_token] }}
           pushplus_token: ${{ secrets[matrix.pushplus_token] }}
           serverchan_key: ${{ secrets[matrix.serverchan_key] }}
+          captcha_key: ${{secrets[matrix.captcha_key] }}
